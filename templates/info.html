@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<!--Menu in alto-->
+
+
+</table>
+<link rel="stylesheet" href="{{ url_for('static', filename= 'css/template.css') }}">
+<table style="border-collapse: collapse; width: 95.6356%;" border="0">
+<tbody>
+<tr>
+<td style="width: 25%;"> <h2> <a href="{{ url_for('home') }}" target="mywindow" style="text-decoration: none" rel="noopener">Home</a></h2>  </td>
+<td style="width: 25%;"> <h2> <a href="{{ url_for('Personal_info') }}" target="self" rel="noopener" style="text-decoration: none" >Personal Contact</a></h2></td>
+</tr>
+</tbody>
+</table>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/template.css') }}">
+  <meta charset="utf-8">
+</head>
+
+    <h2>Personal Contact</h2>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/template.css') }}">
+  </head>
+
+
+<!--Tabella contatti-->
+
+<table style="border-collapse: collapse; width: 100%;" border="0">
+    <tbody>
+    <tr>
+    <td style="width: 4%; vertical-align: middle">
+    <img src="data:image/png;base64,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" width="40" height="40"> 
+    </td>
+    <td> <p></p>
+    <a href="https://www.linkedin.com/in/esposito-davide/" target="_blank" rel="noopener"> Linkedin</a></p>
+    </td>
+    </tr>
+    <tr>
+    <td style="width: 4%;">
+    <img src="https://png.pngtree.com/element_our/png_detail/20181213/inbox-vector-icon-png_267453.jpg",width="40" height="40" > 
+    </td>
+    <td><p>davidesposito1@outlook.it</p></td>
+    <td style="width: 4%;">&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="width: 4%;">
+    <img src="http://simpleicon.com/wp-content/uploads/bell.png", width="40",height="40"> 
+    </td>
+    <td>
+    <p>+39 3403915539</p>   
+    </td>
+    <td style="width: 50%;">&nbsp;</td>
+    </tr>
+    </tbody>
+    </table>
+
+    
+  <body>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/template.css') }}">
+    <h1> Queste sono le mie informazioni personali </h1>
+    <p> Flask is a micro web framework written in Python.</p>
+    <p> Applications that use the Flask framework include Pinterest,
+      LinkedIn, and the community web page for Flask itself.</p>
+
+      <img src="{{url_for('static', filename='images/castione.jpg')}}" width="10%"/>
+
+  </body>
+</html>

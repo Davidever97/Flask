@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<title>CV</title>
+
+<meta charset="UTF-8">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+
+<link rel="icon" type="image/png" href="https://img.icons8.com/ultraviolet/40/000000/submit-resume.png"/>
+
+<body class="w3-blue-grey">
+
+
+
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+      
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="{{url_for('static', filename='images/profile.jpeg')}}" width="100%" />
+          <div class="w3-display-middle w3-container w3-text-black">
+          
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-address-card-o w3-margin-right w3-large w3-text-blue-grey"></i>Esposito Davide Enzo</p>
+          <p><i class="fa fa-calendar w3-margin-right w3-large w3-text-blue-grey"></i>07/09/1997</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Studente</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Mapello, Bergamo</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>davidesposito1@outlook.it</p>
+          <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-blue-grey"></i> <a title="Link profilo Linkedin" href="https://www.linkedin.com/in/esposito-davide/" target="_blank">Profilo Linkedin</a> </p>
+          <p><i class="fa fa-cloud-download fa-fw w3-margin-right w3-large w3-text-blue-grey"></i> <a title="Premere per scaricare il pdf" href="{{ url_for('cvpdf') }}" > Download CV PDF</a> </p>
+          
+          <hr>
+
+          
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue-grey"></i>Skills</b></p>
+          <p>R Studio</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:50%">50%</div>
+          </div>
+          <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:60%">
+              <div class="w3-center w3-text-white">60%</div>
+            </div>
+          </div>
+          <p>Office</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:80%">80%</div>
+          </div>
+          <p>Latex</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:70%">70%</div>
+          </div>
+          <br>
+          <p>Arduino</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:40%">40%</div>
+          </div>
+          <br>
+          <p>SQL</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:40%">40%</div>
+          </div>
+
+          <hr>
+        
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue-grey"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-blue-grey" style="height:24px;width:100%"></div>
+          </div>
+          <hr>
+          <p class="w3-large w3-text-theme"><b><i class="fas fa-award fa-fw w3-margin-right w3-text-blue-grey"></i>Altre certificazioni</b></p>
+          <p>
+            <ul>
+              <li><a title="Link alla certificazione"  target="_blank" href="https://www.udemy.com/certificate/UC-9c5c5707-407f-4e21-a985-4e6786aa98c5/" > Data Science and Machine Learning Bootcamp with R.
+                Autorità emittente Udemy</a></li>
+              <li><a title="Link alla certificazione" target="_blank" href="https://www.udemy.com/certificate/UC-b8cd08f7-c557-4240-997f-a3b3425f71ab/" > Learning Python for Data Analysis and Visualization.
+                Autorità emittente Udemy</a></li>
+              
+            </ul>
+          </p>
+          
+  
+        </div>
+      </div><br>
+      
+
+
+
+
+      
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Consulente ERP Oracle Netsuite</b></h5>
+          <h6 class="w3-text-blue-grey"><i class="fas fa-map-marker-alt fa-fw w3-margin-right"></i>GN Techonomy S.r.l</h6>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sett 2019 - Sett 2020</h6>
+          <p>Incaricato dell'analisi dei processi aziendali di distribuzione e produzione 
+            per poi configurare e impostare l’ERP 
+            a seconda delle esigenze dei singoli clienti.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Venditore</b></h5>
+          <h6 class="w3-text-blue-grey"><i class="fas fa-map-marker-alt fa-fw w3-margin-right"></i>Leroy Melin S.r.l</h6>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2019 - Sett 2019</h6>
+          <p>Incaricato alla vendita e aiuto clienti nella scelte dei prodotti e 
+            delle quantità ideali per i loro progetti nel reparto piastrelle e sanitari.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Adetto bar</b></h5>
+          <h6 class="w3-text-blue-grey"><i class="fas fa-map-marker-alt fa-fw w3-margin-right"></i>UCI Italia S.p.A</h6>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2019 - Mar 2019</h6>
+          <p>Incaricato della vendita di prodotti alimentari all’interno del cinema </p><br>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Operatore di magazzino</b></h5>
+          <h6 class="w3-text-blue-grey"><i class="fas fa-map-marker-alt fa-fw w3-margin-right"></i>Brembo S.p.A</h6>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dic 2016 - Ago 2018</h6>
+          <p>Incaricato alla movimentazione e alla
+             rintracciabilità del materiale in entrata e in uscita dal magazzino. </p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Formazione Accademica</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Diploma di Maturità: 83</b></h5>
+          <h6 class="w3-text-blue-grey"><i class="fas fa-map-marker-alt fa-fw w3-margin-right"></i>ISISS Giovanni Maironi Da Ponte </h6>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011 - 2016</h6>
+          <p>Durate questo percorso accademico ho acquisito competenze relative 
+            alla gestione della contabilità generale aziendale, alla elaborazione 
+            di strategie aziendali e comprensione dei fenomeni economici.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Laurea triennale in Ingegneria gestionale: 100/110</b></h5>
+          <h6 class="w3-text-blue-grey"><i class="fas fa-map-marker-alt fa-fw w3-margin-right"></i>Università Degli Studi di Bergamo </h6>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Settembre 2016 - Luglio 2019</h6>
+          <p>Durante il corso di laurea ho ricevuto insegnamenti che mi perme-
+            ttono di affrontare e capire i molteplici aspetti tecnici, economici, 
+            organizzativi e gestionali che caratterizzano l’attività industriale 
+            ed economica.</p>
+            <p>Argomento tesi laurea triennale “Shadow Banking: Il caso dei Money Market Fund “</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Esperienza Erasmus</b></h5>
+          <h6 class="w3-text-blue-grey"><i class="fas fa-map-marker-alt fa-fw w3-margin-right"></i>Kauno Technoligijos universitetas, LT </h6>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sett 2018 - Gen 2018</h6>
+          <p></p>Durante questa esperienza ho avuto modo di imparare a conoscere, lavorare e vivere con persone di ogni cultura grazie all'università 
+          ospitante che ha un approcio educativo basato sul team working e elaborazioni di progetti innerenti al corso.<br>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Laurea Magistrale in Management Engineering</b></h5>
+          <h6 class="w3-text-blue-grey"><i class="fas fa-map-marker-alt fa-fw w3-margin-right"></i>Università Degli Studi di Bergamo </h6>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Sett 2019 - Oggi</h6>
+          <p>Durante il corso di laurea riceverò insegnamenti che mi permettono di progettare, 
+            gestire e dirigere processi aziendali complessi, coniugando le scelte tecnologiche 
+            e informatiche con gli aspetti economici e organizzativi.</p>
+            <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Corso Alta Formazione Data Science</b></h5>
+          <h6 class="w3-text-blue-grey"><i class="fas fa-map-marker-alt fa-fw w3-margin-right"></i>Geeks Academy</h6>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ott 2020 - Mar 2021</h6>
+          <p>Corso Dalla durata di 6 mesi svoltasi online nel quale ho avuto modo di approfondire diversi aspetti relativi
+            alla data science quali Linux, Mysql, Python (Pandas, Matplotlib, Numpy, Keras, Sklearn) e Excel (Power Pivot e Power Query) con un focus particolare alla loro applicazione pratica.
+          </p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-blue-grey w3-center w3-margin-top">
+  <!-- 
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+  <p>Powered by: Python/Flask, hosted on AWS</p>
+</footer>
+</body>
+</html>
+
+

@@ -1,0 +1,28 @@
+h1 {
+    border: 17px rgb(8, 1, 100);
+    background-color: #f0eff5;
+    color: rgb(8, 1, 100);
+    text-align: left;
+    padding: 5px;
+}
+p{
+    color: rgb(8, 1, 100);
+}
+h2 {
+    border: 17px rgb(8, 1, 100);
+    background-color: #f0eff5;
+    color: rgb(8, 1, 100);
+    text-align: left;
+    padding: 5px;
+}
+
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    background-repeat:no-repeat;
+    background: linear-gradient( to  top, DarkBlue,  CornflowerBlue);
+}
